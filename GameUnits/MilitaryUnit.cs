@@ -1,6 +1,6 @@
 namespace GameUnits
 {
-    public class MilitaryUnit : Unit // Herança!!
+    public class MilitaryUnit : Unit
     {
         public int AttackPower { get; }
         public int XP { get; private set; }
@@ -11,26 +11,22 @@ namespace GameUnits
             XP = 0;
         }
 
-        public override int Health //  faz override da propriedade Health
-        {
-            get { return base.Health + XP; }
-            set { base.Health = value; }
-        }
-
-        public override float Cost // faz override da propriedade Cost
+        public override float Cost
         {
             get { return AttackPower + XP; }
         }
 
-        public void Attack(Unit u) // metodo Attack
+        public void Attack(Unit u)
         {
-            XP++; // vai aumentadndo XP da própria unidade
+            XP++;
             u.Health -= AttackPower;
         }
-         public override string ToString()
+
+        public override string ToString()
         {
             return $"{base.ToString()} AP={AttackPower} XP={XP}";
         }
     }
 }
+
 

@@ -3,9 +3,9 @@ namespace GameUnits
     public class Unit
     {
         private int movement;
-        public virutal int Health { get; protected set; }
+        public virtual int Health { get; protected set; }
 
-        public readonly float Cost { get; }
+        public virtual float Cost { get; }
 
         public Unit(int movement, int health)
         {
@@ -13,9 +13,9 @@ namespace GameUnits
             Health = health;
         }
 
-        public void Move(int distancia)
+        public void Move(int distance)
         {
-            Console.WriteLine($"A unidade moveu {distancia} casas.");
+            Console.WriteLine($"A unidade moveu {distance} casas.");
         }
 
         public override string ToString()
@@ -24,3 +24,5 @@ namespace GameUnits
         }
     }
 }
+
+
