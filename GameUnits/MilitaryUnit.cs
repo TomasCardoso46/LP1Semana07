@@ -19,7 +19,7 @@ namespace GameUnits
         public void Attack(Unit u)
         {
             XP++;
-            u.Health -= AttackPower;
+            this.Health -= AttackPower;
         }
 
         public override string ToString()
