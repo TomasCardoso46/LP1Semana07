@@ -17,5 +17,10 @@ namespace GameUnits
         {
             Console.WriteLine($"A unidade moveu {distancia} casas.");
         }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name}: HP={Health} COST={Cost:F2}";
+        }
     }
 }
