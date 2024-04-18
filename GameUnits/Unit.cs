@@ -3,7 +3,9 @@ namespace GameUnits
     public class Unit
     {
         private int movement;
-        public int Health { get; set; }
+        public virutal int Health { get; protected set; }
+
+        public readonly float Cost { get; }
 
         public Unit(int movement, int health)
         {
