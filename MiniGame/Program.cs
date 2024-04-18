@@ -1,12 +1,17 @@
-﻿using System;
-
-namespace MiniGame
+﻿namespace MiniGame
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Character[] characters = new Character[2];
+            characters[0] = new Player("John Snow");
+            characters[1] = new Enemy("Gregor Clegan");
+
+            foreach(Character c in characters)
+            {
+                c.Fight();
+            }
         }
     }
 }
