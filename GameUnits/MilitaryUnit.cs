@@ -11,22 +11,20 @@ namespace GameUnits
             XP = 0;
         }
 
-        public override int Health // Override da propriedade Health
+        public override int Health //  faz override da propriedade Health
         {
             get { return base.Health + XP; }
             set { base.Health = value; }
         }
 
-        public override float Cost // Override da propriedade Cost
+        public override float Cost // faz override da propriedade Cost
         {
             get { return AttackPower + XP; }
         }
 
-        public void Attack(Unit u) // Método Attack
+        public void Attack(Unit u) // metodo Attack
         {
-            XP++; // Incrementa XP da própria unidade
-
-            // Aplica dano igual a AttackPower na Health da unidade atacada
+            XP++; // vai aumentadndo XP da própria unidade
             u.Health -= AttackPower;
         }
     }
