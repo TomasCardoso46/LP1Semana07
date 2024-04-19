@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverrideVsNew", "OverrideVs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructWithRef", "StructWithRef\StructWithRef.csproj", "{85748A62-96C6-4A9E-A414-2897504A3625}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassVsStruct", "ClassVsStruct\ClassVsStruct.csproj", "{DEA5285F-733D-4EF7-9D53-57F90BFF9C43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{85748A62-96C6-4A9E-A414-2897504A3625}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85748A62-96C6-4A9E-A414-2897504A3625}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85748A62-96C6-4A9E-A414-2897504A3625}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEA5285F-733D-4EF7-9D53-57F90BFF9C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA5285F-733D-4EF7-9D53-57F90BFF9C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA5285F-733D-4EF7-9D53-57F90BFF9C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA5285F-733D-4EF7-9D53-57F90BFF9C43}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
